@@ -1,6 +1,5 @@
-// src/App.tsx
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Gallery from './pages/Gallery';
 import About from './pages/About';
@@ -10,10 +9,9 @@ import News from './pages/News';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename="/my-website">
       <div className="app-container">
         <Routes>
           <Route
@@ -32,12 +30,11 @@ const App: React.FC = () => {
               </div>
             }
           />
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/news" element={<News />} />
-          
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/news" element={<News />} />
         </Routes>
       </div>
     </Router>
@@ -45,7 +42,6 @@ const App: React.FC = () => {
 };
 
 export default App;
-
 
 
 
