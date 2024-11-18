@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/my-website/static/css/main.5347e342.css",
+    "main.js": "/my-website/static/js/main.d82cb6a1.js",
+    "static/js/453.195b869a.chunk.js": "/my-website/static/js/453.195b869a.chunk.js",
+    "static/media/boston.jpeg": "/my-website/static/media/boston.2a416284f89cf065a13a.jpeg",
+    "index.html": "/my-website/index.html",
+    "main.5347e342.css.map": "/my-website/static/css/main.5347e342.css.map",
+    "main.d82cb6a1.js.map": "/my-website/static/js/main.d82cb6a1.js.map",
+    "453.195b869a.chunk.js.map": "/my-website/static/js/453.195b869a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5347e342.css",
+    "static/js/main.d82cb6a1.js"
+  ]
+}
