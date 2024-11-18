@@ -1,0 +1,97 @@
+/* Overall container styling */
+.about-container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Background section */
+.about-background {
+  position: relative;
+  background-image: url('/public/images/boston.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* Overlay for text */
+.about-overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  padding: 40px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Title styling */
+.about-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Subtitle styling */
+.about-subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+/* Main content section */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  font-size: 1.2rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Profile image styling */
+.about-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+/* Text styling */
+.about-text p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 15px;
+  max-width: 600px;
+}
+
+/* Resume button styling */
+.resume-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the resume button */
+.resume-button:hover {
+  background-color: #005bb5;
+}
+
+/* Font Awesome icon styling */
+.resume-button i {
+  margin-right: 8px;
+}
+

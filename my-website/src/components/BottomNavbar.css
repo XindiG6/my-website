@@ -1,0 +1,39 @@
+/* Styling for the bottom navigation bar */
+.bottom-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f8f8f8;
+  padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #ddd;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 16px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: color 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none; /* Removes underline */
+}
+
+/* Shadow effect on hover */
+.nav-button:hover {
+  color: #0073e6; /* Highlight color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Black shadow effect */
+  border-radius: 5px; /* Optional: rounded shadow effect */
+}
+
+/* Optional: Styling for mobile view */
+@media (max-width: 768px) {
+  .nav-button {
+    font-size: 14px;
+  }
+}

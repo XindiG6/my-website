@@ -1,0 +1,51 @@
+/* src/pages/News.css */
+
+.news-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.news-card {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.news-image {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+  cursor: pointer; /* Cursor changes to pointer to indicate clickable image */
+}
+
+.news-content {
+  flex: 1;
+}
+
+.news-content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.news-date {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Modal image styling */
+.modal-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}

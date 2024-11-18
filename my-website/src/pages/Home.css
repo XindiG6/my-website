@@ -1,0 +1,119 @@
+/* src/pages/Home.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap'); /* Add a refined font */
+
+/* Apply font globally for this page */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Main container with horizontal layout */
+.home-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Welcome section containing the navbar and welcome text */
+.welcome-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 20px;
+  position: relative;
+  justify-content: center; /* Centers the welcome text vertically */
+}
+
+/* Navigation bar positioned at the top within welcome section */
+.navbar-top {
+  position: absolute;
+  top: 20px;
+  display: flex;
+  gap: 20px;
+  font-size: 1.2rem;
+  justify-content: center;
+}
+
+/* Navigation link styles */
+.navbar-top a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-top a:hover {
+  color: #0077b5; /* LinkedIn blue color */
+}
+
+.navbar-top .fab.fa-linkedin {
+  font-size: 1.5rem;
+  margin-left: 8px;
+}
+
+/* Welcome text remains centered in the section */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap'); /* 导入新的字体 */
+
+.welcome-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif; /* 使用现代简洁的 Montserrat 字体 */
+  font-size: 4em; /* 大字体尺寸 */
+  font-weight: 700;
+  color: #8d8989; /* 白色字体 */
+  text-align: center;
+  line-height: 1.1;
+  letter-spacing: -0.02em; /* 轻微的字符间距调整 */
+}
+
+body {
+  background-color: #1c1c1c; /* 深色背景以增加对比度 */
+}
+
+
+body {
+  background-color: #1c1c1c; /* Dark background to create high contrast */
+}
+
+
+/* Right-side image section */
+.image-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.side-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Scroll down indicator */
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2rem;
+  color: #333;
+  animation: bounce 1.5s infinite;
+}
+
+/* Bounce animation for scroll indicator */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0) translateX(-50%);
+  }
+  50% {
+    transform: translateY(10px) translateX(-50%);
+  }
+}
