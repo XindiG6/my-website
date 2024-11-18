@@ -27,7 +27,7 @@ const About: React.FC = () => {
             <p>Thank you for visiting my portfolio!</p>
 
             {/* Resume Download Button */}
-            <a href="/resume.pdf" download className="resume-button">
+            <a href="./public/XindiGuo_resume.pdf" download className="resume-button">
               <i className="fas fa-file-download"></i> Download My Resume
             </a>
           </div>

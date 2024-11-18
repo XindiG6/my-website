@@ -13,9 +13,9 @@ const Publications: React.FC = () => {
       ),
       conference: "5th International Workshop on Cloud Intelligence / AIOps (AIOps '24), 2024.",
       link: "https://luosuu.github.io/assets/files/AIOps_24.pdf",
-      codeLink: " ",
-      label: "AIOps", // Label text
-      image: "./images/paper1.jpg",
+      codeLink: "",
+      label: "AIOps",
+      image: `${process.env.PUBLIC_URL}/images/paper1.jpg`,
     },
     {
       title: "RINAS: Training with Dataset Shuffling Can Be General and Fast",
@@ -26,9 +26,9 @@ const Publications: React.FC = () => {
       ),
       conference: "arXiv preprint arXiv:2312.02368, 2023.",
       link: "https://arxiv.org/abs/2312.02368",
-      codeLink: " ",
-      label: "arXiv", // Label text
-      image: "./images/paper2.jpg",
+      codeLink: "",
+      label: "arXiv",
+      image: `${process.env.PUBLIC_URL}/images/paper2.jpg`,
     },
   ];
 
@@ -39,17 +39,17 @@ const Publications: React.FC = () => {
       duration: "Sep 2020 - Jun 2021",
       link: "https://events.engineering.oregonstate.edu/expo2021/project/develop-virtual-video-studio",
       codeLink: "https://github.com/XindiG6/VirtualVideoStudio",
-      label: "Capstone", // Label text
-      image: "./images/project2.png",
+      label: "Capstone",
+      image: `${process.env.PUBLIC_URL}/images/project2.png`,
     },
     {
       title: "BattleCasters",
-      description: "An artillery and collectible card game where you use cards to cast spells and launch devastating attacks on your enemy. Players will be able to select from champions and craft powerful decks.",
+      description: "An artillery and collectible card game where you use cards to cast spells and launch devastating attacks on your enemy.",
       duration: "Mar 2021 - Aug 2021",
       link: "https://www.battlecasters.io/",
-      codeLink: " ",
-      label: "Game", // Label text
-      image: "./images/project1.jpg",
+      codeLink: "",
+      label: "Game",
+      image: `${process.env.PUBLIC_URL}/images/project1.jpg`,
     },
   ];
 
@@ -67,7 +67,9 @@ const Publications: React.FC = () => {
                 <p><strong>Authors:</strong> {publication.authors}</p>
                 <p>{publication.conference}</p>
                 <a href={publication.link} target="_blank" rel="noopener noreferrer" className="button-link">View Publication</a>
-                <a href={publication.codeLink} target="_blank" rel="noopener noreferrer" className="button-link">View Code</a>
+                {publication.codeLink.trim() && (
+                  <a href={publication.codeLink} target="_blank" rel="noopener noreferrer" className="button-link">View Code</a>
+                )}
               </div>
             </div>
           ))}
@@ -86,14 +88,15 @@ const Publications: React.FC = () => {
                 <p>{project.description}</p>
                 <p>{project.duration}</p>
                 <a href={project.link} target="_blank" rel="noopener noreferrer" className="button-link">View Project</a>
-                <a href={project.codeLink} target="_blank" rel="noopener noreferrer" className="button-link">View Code</a>
+                {project.codeLink.trim() && (
+                  <a href={project.codeLink} target="_blank" rel="noopener noreferrer" className="button-link">View Code</a>
+                )}
               </div>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Bottom navbar */}
       <BottomNavbar />
     </div>
   );
